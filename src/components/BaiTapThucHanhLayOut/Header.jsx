@@ -3,21 +3,35 @@ import React, { Component } from "react";
 export default class Header extends Component {
   render() {
     return (
-      <div className="bg-dark position-relative pt-2 pb-2">
-        <div className="container px-lg-5 d-flex justify-content-between align-items-center">
-            <a href="#" className="font-20">Start Bootstrap</a>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                    <a href="#" className="nav-link active">Home</a>
-                </li>
-                <li className="nav-item">
-                    <a href="#">About</a>
-                </li>
-                <li className="nav-item">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <div>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+              <a class="navbar-brand" href="#">
+                Start Bootstrap
+              </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      About
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
       </div>
     );
   }
